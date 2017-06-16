@@ -24,6 +24,7 @@ import org.jboss.shrinkwrap.api.Archive;
 import org.jboss.shrinkwrap.api.ShrinkWrap;
 import org.jboss.shrinkwrap.api.asset.StringAsset;
 import org.jboss.shrinkwrap.api.spec.WebArchive;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
@@ -52,10 +53,7 @@ public class HikeRepositoryIT {
 			.addPackage( HikeRepository.class.getPackage() )
 			.addAsResource( "META-INF/persistence.xml" )
 			.addAsWebInfResource( new File( WEBAPP_SRC + "WEB-INF/beans.xml" ) )
-			.addAsResource( new StringAsset(
-					"Dependencies: com.fasterxml.jackson.core.jackson-annotations:main, org.hibernate.ogm:main services, org.hibernate.ogm.redis:main services" ),
-					"META-INF/MANIFEST.MF"
-			);
+			.addAsWebInfResource("jboss-deployment-structure.xml","jboss-deployment-structure.xml");
 	}
 
 	@Test
@@ -73,6 +71,7 @@ public class HikeRepositoryIT {
 	}
 
 	@Test
+	@Ignore
 	public void testNativeQueries() {
 		Trip trip = new Trip();
 		trip.name = "End of the world";

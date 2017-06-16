@@ -202,7 +202,7 @@
                         <failOnMissingWebXml>false</failOnMissingWebXml>
                         <archive>
                             <manifestEntries>
-                                <Dependencies>org.hibernate.ogm:main services, org.hibernate.ogm.redis:main services</Dependencies>
+                                <Dependencies>org.hibernate.ogm:main services,org.hibernate.ogm.infinispan:main services, org.hibernate.ogm.redis:main services</Dependencies>
                             </manifestEntries>
                         </archive>
                     </configuration>

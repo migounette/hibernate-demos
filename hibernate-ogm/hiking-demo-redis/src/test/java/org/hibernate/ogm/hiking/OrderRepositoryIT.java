@@ -47,10 +47,7 @@ public class OrderRepositoryIT {
 			.addPackage( OrderRepository.class.getPackage() )
 			.addAsResource( "META-INF/persistence.xml" )
 			.addAsWebInfResource( new File( WEBAPP_SRC + "WEB-INF/beans.xml" ) )
-			.addAsResource( new StringAsset(
-					"Dependencies: org.hibernate.ogm:main services, org.hibernate.ogm.redis:main services" ),
-					"META-INF/MANIFEST.MF"
-			);
+			.addAsWebInfResource("jboss-deployment-structure.xml","jboss-deployment-structure.xml");
 	}
 
 	@Test

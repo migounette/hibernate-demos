@@ -15,6 +15,12 @@
 			<property name="hibernate.ogm.datastore.provider" value="mongodb" />
 			<property name="hibernate.ogm.datastore.database" value="HikeDB" />
 			<property name="hibernate.ogm.datastore.create_database" value="true" />
+			<property name="hibernate.ogm.datastore.host" value="cmsgvm14.gre.hpecorp.net"/>
+            <property name="hibernate.ogm.datastore.port" value="27017"/>			
+            <property name="hibernate.ogm.datastore.username" value="mongo"/>
+            <property name="hibernate.ogm.datastore.password" value="hwroot"/>
+            <property name="hibernate.ogm.mongodb.driver.sslEnabled" value="true"/>
+            <property name="hibernate.ogm.mongodb.driver.sslInvalidHostNameAllowed" value="true"/>
 			<property name="jboss.as.jpa.providerModule" value="org.hibernate:5.1"/>
 		</properties>
 	</persistence-unit>
@@ -29,6 +35,9 @@
 		<properties>
 			<property name="hibernate.ogm.datastore.provider" value="mongodb" />
 			<property name="hibernate.ogm.datastore.database" value="HikeDB" />
+			<property name="hibernate.ogm.datastore.host" value="cmsgvm14.gre.hpecorp.net"/>
+            <property name="hibernate.ogm.datastore.port" value="27017"/>			
+            <property name="hibernate.ogm.mongodb.driver.sslEnabled = true" value="true"/>
 			<property name="hibernate.ogm.datastore.create_database" value="true" />
 			<property name="jboss.as.jpa.providerModule" value="org.hibernate:5.1"/>
 		</properties>

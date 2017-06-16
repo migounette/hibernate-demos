@@ -1,8 +1,8 @@
 package org.hibernate.ogm.hiking;
 
-import java.util.List;
-
 import static org.fest.assertions.Assertions.assertThat;
+
+import java.util.List;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -10,10 +10,8 @@ import javax.persistence.EntityTransaction;
 import javax.persistence.Persistence;
 
 import org.hibernate.ogm.hiking.model.Hike;
-import org.hibernate.ogm.hiking.model.Person;
 import org.hibernate.ogm.hiking.model.Section;
 import org.hibernate.ogm.hiking.model.Trip;
-
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
